@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 17.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="139.957px" height="29.945px" viewBox="0 0 139.957 29.945" enable-background="new 0 0 139.957 29.945"
+	 xml:space="preserve">
+<g>
+	<path fill="#0C6A80" d="M118.393,0C113.398,0,1.362,0,0.547,0C0.053,0,0,0,0,0s0,1.927,0,8.771
+		c0,14.246,7.096,21.175,21.732,21.175c6.873,0,118.225,0,118.225,0s0-0.021,0-0.389c0-0.689,0-2.598,0-7.881
+		C139.957,6.814,132.105,0,118.393,0z"/>
+</g>
+<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="32.9507" y1="51.9087" x2="92.7512" y2="-7.8942">
+	<stop  offset="0" style="stop-color:#0D5363"/>
+	<stop  offset="1" style="stop-color:#0C6A80"/>
+</linearGradient>
+<path fill="url(#SVGID_1_)" d="M0.67,0.729c0,1.894,0,7.983,0,7.983c0,13.797,6.89,20.505,21.062,20.505h117.368
+	C139.101,29.217,0.67,10.443,0.67,0.729z"/>
+<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="36.2824" y1="48.2578" x2="102.3377" y2="-17.0117">
+	<stop  offset="0" style="stop-color:#0C6A80"/>
+	<stop  offset="0.0551" style="stop-color:#0E758D"/>
+	<stop  offset="0.1277" style="stop-color:#10809A"/>
+	<stop  offset="1" style="stop-color:#0EA4C6"/>
+</linearGradient>
+<path fill="url(#SVGID_2_)" d="M139.287,21.676c0-13.939-7.03-21.006-20.895-21.006H0.67c0,0,3.105,0.117,0,0.117
+	C0.584,7.039,139.267,22.683,139.267,29.275C139.267,25.699,139.287,21.676,139.287,21.676z"/>
+<linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="36.171" y1="48.2579" x2="102.2263" y2="-17.0117">
+	<stop  offset="0" style="stop-color:#F7F8FF;stop-opacity:0"/>
+	<stop  offset="0.9104" style="stop-color:#F7F8FF;stop-opacity:0.9104"/>
+	<stop  offset="1" style="stop-color:#F7F8FF"/>
+</linearGradient>
+<path fill="url(#SVGID_3_)" fill-opacity="0.4" d="M139.176,21.676c0-13.939-7.03-21.006-20.896-21.006H0.559
+	c0,0,3.104,0.117,0,0.117C0.471,7.039,139.155,22.683,139.155,29.275C139.155,25.699,139.176,21.676,139.176,21.676z"/>
+</svg>

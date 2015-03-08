@@ -1,0 +1,73 @@
+/******************************************************************
+Site Name: 
+Author: 
+
+Stylesheet: Super Large Monitor Stylesheet
+
+You can add some advanced styles here if you like. This kicks in
+on larger screens.
+
+******************************************************************/
+#floral-left, #floral-right {
+	position: absolute;
+	display: block;
+	top: 0;
+	width: 10.5%;
+	height: 100vh;
+	pointer-events:none;
+	position: fixed;
+	z-index: 9998;
+	
+	
+	@media (min-width:1500px) {
+		width: 14.5%;
+	}
+
+	@media (min-width: 1700px) {
+		width:18.25em;
+	}
+
+}
+#floral-left {
+	left: 0;
+	background: url('../images/floral-l.png') no-repeat right top;
+}
+#floral-right {
+	right: 0;
+	background: url('../images/floral-r.png') no-repeat left top;
+}
+.page-template-page-home-php {
+	#floral-left, #floral-right {
+		display: none;
+	}
+}
+/********************
+WORDPRESS BODY CLASSES
+style a page via class
+********************/
+.page-template-page-home-php {
+	
+
+}
+
+/*********************
+HEADER STYLES
+*********************/
+.header {
+	/*background: url('../images/header-1330.jpg') no-repeat center top;*/
+	background :/* url('../images/header-1330.png') no-repeat center top,*/ -moz-linear-gradient(50% 18.93% -90deg,rgba(0, 54, 71, 1) 10.91%,rgba(0, 47, 62, 1) 30.6%,rgba(0, 27, 36, 1) 63.42%,rgba(0, 0, 0, 1) 100%) ;
+	
+	background :/* url('../images/header-1330.png') no-repeat center top, */-webkit-linear-gradient(-90deg, rgba(0, 54, 71, 1) 10.91%, rgba(0, 47, 62, 1) 30.6%, rgba(0, 27, 36, 1) 63.42%, rgba(0, 0, 0, 1) 100%) ;
+	
+	background :/* url('../images/header-1330.png') no-repeat center top, */-webkit-gradient(linear,50% 18.93% ,50% 115.39% ,color-stop(0.1091,rgba(0, 54, 71, 1) ),color-stop(0.306,rgba(0, 47, 62, 1) ),color-stop(0.6342,rgba(0, 27, 36, 1) ),color-stop(1,rgba(0, 0, 0, 1) )) ;
+	
+	background :/* url('../images/header-1330.png') no-repeat center top, */-o-linear-gradient(-90deg, rgba(0, 54, 71, 1) 10.91%, rgba(0, 47, 62, 1) 30.6%, rgba(0, 27, 36, 1) 63.42%, rgba(0, 0, 0, 1) 100%) ;
+	
+	background :/* url('../images/header-1330.png') no-repeat center top, */-ms-linear-gradient(-90deg, rgba(0, 54, 71, 1) 10.91%, rgba(0, 47, 62, 1) 30.6%, rgba(0, 27, 36, 1) 63.42%, rgba(0, 0, 0, 1) 100%) ;
+	
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#003647', endColorstr='#000000' ,GradientType=0)";
+	
+ 	background : /*url('../images/header-1330.png') no-repeat center top, */linear-gradient(180deg, rgba(0, 54, 71, 1) 10.91%, rgba(0, 47, 62, 1) 30.6%, rgba(0, 27, 36, 1) 63.42%, rgba(0, 0, 0, 1) 100%) ;
+ 	
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#003647',endColorstr='#000000' , GradientType=0);
+}

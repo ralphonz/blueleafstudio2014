@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+<!--<filter id="drop-shadow">
+<feGaussianBlur in="SourceAlpha" stdDeviation="2.2"/>
+<feOffset dx="3" dy="3" result="offsetblur"/>
+<feFlood flood-color="rgb(0,0,0,)"/>
+<feComposite in2="offsetblur" operator="in"/>
+<feMerge>
+<feMergeNode/>
+<feMergeNode in="SourceGraphic"/>
+</feMerge>
+</filter>-->
+<filter id="drop-shadow" x="-100%" y="-100%" width="420%" height="420%">
+  <feGaussianBlur in="SourceAlpha" stdDeviation="5"/>
+  <feOffset dx="3" dy="3" result="offsetblur"/>
+  <feFlood flood-color="#000000"/>
+  <feComposite in2="offsetblur" operator="in"/>
+  <feMerge>
+    <feMergeNode/>
+    <feMergeNode in="SourceGraphic"/>
+  </feMerge>
+</filter>
+</svg>

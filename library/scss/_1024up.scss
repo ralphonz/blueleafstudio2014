@@ -1,0 +1,188 @@
+/******************************************************************
+Site Name:Blueleaf Studio 
+Author: Ralph Stokes
+
+Stylesheet: Desktop Stylsheet
+
+This is the desktop size. It's larger than an iPad so it will only
+be seen on the Desktop. 
+
+******************************************************************/
+/*********************/
+/* @group LAYOUT & GRID STYLES
+*********************/
+
+.wrap {
+	max-width: 1140px;
+}
+/* @end */
+/********************/
+/* @group WORDPRESS BODY CLASSES
+style a page via class
+********************/
+.single-project {
+	article {
+		section {
+			width: 50%;
+			float: left;
+		}
+	}
+}
+.post-type-archive-project, .page-template-page-WHMCS-php  {
+	height: 100%;
+	
+	#content {
+		height: calc(100% - 5em);
+	}
+	
+	#inner-content, #main, #slider-page {
+		height: 100%;
+		
+	}
+}
+
+#slider-page {
+	
+	article {
+		height: calc(100% - 4em);
+		margin: 0;
+		border-bottom: 1px solid $bl-darkblue;
+		float: left;
+		border-right: none;
+		border-left: none;
+		border-bottom: none;
+		/*overflow: auto;*/
+		
+		.article-header {
+			height: 100%;
+			position: relative;
+			max-width: 70px;
+			float: left;
+			width: 4.375em;
+			border-right: 1px solid transparent;
+			
+			h3 {
+				position: absolute;
+			    top: 1em;
+			    right: 75%;
+			    white-space: nowrap;
+			    text-align: right;
+			    width: auto;
+			    margin:0;
+			
+			    -webkit-transform: rotate(270deg);
+			    -webkit-transform-origin: right top;
+			    -moz-transform: rotate(270deg);
+			    -moz-transform-origin: right top;
+			    -ms-transform: rotate(270deg);
+			    -ms-transform-origin: right top;
+			    -o-transform: rotate(270deg);
+			    -o-transform-origin: right top;
+			    transform: rotate(270deg);
+			    transform-origin: right top;
+			    
+			    .fa {
+			    	-webkit-transform: rotate(90deg);
+			    	-moz-transform: rotate(90deg);
+			    	-ms-transform: rotate(90deg);
+			    	-o-transform: rotate(90deg);
+			    	transform: rotate(90deg);
+			    }
+			}
+			
+			&.underside {
+				border-right-color: $bl-darkblue;
+				
+				&:after, &:before {
+					top: 10%;
+					left: 100%;
+				}
+				
+				&:after {
+					border-color: rgba(136, 183, 213, 0);
+					border-width: 0.625em;
+					margin-top: -0.625em;
+					margin-left: 0;
+				}
+				&:before {
+					border-color: rgba(194, 225, 245, 0);
+					border-left-color: $bl-darkblue;
+					border-width: 0.6875em;
+					margin-top: -0.6875em;
+					margin-left: 0;
+				}
+			}
+			&.blue1 {
+				&:after {
+					border-left-color: $bl-lightblue;
+				}
+			}
+			&.blue2 {
+				&:after {
+					border-left-color: $bl-mid-lightblue;
+				}
+			}
+			&.blue3 {
+				&:after {
+					border-left-color: $bl-mid-blue;
+				}
+			}
+			&.blue4 {
+				&:after {
+					border-left-color: $bl-mid-midblue;
+				}
+			}
+			&.blue5 {
+				&:after {
+					border-left-color: $bl-darkblue;
+				}
+			}
+		}
+		
+		.entry-content {
+			overflow-y: auto;
+			width: 0;
+			border-right: 1px solid $bl-darkblue;
+			height: 100%;
+			display: inline-block;
+			float: left;
+			padding: 0;
+			margin: 0;
+		}
+		
+	}
+	article:first-of-type {
+		border-left: 1px solid $bl-darkblue;
+	}
+	
+	.archive-header {
+		position: relative;
+		border-left: none;
+		margin-bottom: 0.75em;
+		margin-top: 1em;
+	}
+	
+	.page-nav {
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+}
+/* @end */
+/*********************/
+/* @group HEADER STYLES
+*********************/
+
+.header {
+	background:linear-gradient(180deg, rgba(0, 54, 71, 1) 10.91%, rgba(0, 47, 62, 1) 30.6%, rgba(0, 27, 36, 1) 63.42%, rgba(0, 0, 0, 1) 100%);
+}
+/* @end */
+/*********************/
+/* @group POSTS & CONTENT STYLES
+*********************/
+#bridge {
+	nav.accountdashboard {
+		font-size: 1.57142857em;
+	}
+}
+/* @end */

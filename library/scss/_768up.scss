@@ -1,0 +1,958 @@
+/******************************************************************
+Site Name:
+Author:
+
+Stylesheet: Tablet & Small Desktop Stylesheet
+
+Here's where you can start getting into the good stuff.
+This size will work on iPads, other tablets, and desktops.
+So you can start working with more styles, background images,
+and other resources. You'll also notice the grid starts to
+come into play. Have fun!
+
+******************************************************************/
+
+
+/*********************/
+/* @group GENERAL STYLES
+*********************/
+
+body {}
+
+.blueleaf-fa {
+	height: 1em;
+	width: 1em;
+	
+	&:hover path {
+		fill: $bl-mid-lightblue;
+	}
+}
+
+/* @end */
+/*********************/
+/* @group LAYOUT & GRID STYLES
+*********************/
+
+
+/* @end */
+/********************/
+/* @group WORDPRESS BODY CLASSES
+style a page via class
+********************/
+.home  {
+	#logo {
+		left: 1em;
+		top: -0.1em;
+		&:hover svg path {
+		    fill: $bl-mid-lightblue;
+		}
+	}
+	#login-button {
+		font-size: 1em;
+		top: 1em;
+		
+		&:hover {
+			color: $bl-mid-lightblue;
+		}
+	}
+}
+.web-hosting-ad {
+	background: url('../images/carbon-free-cloud.jpg') no-repeat center top;
+	min-height: 453px;
+	.tag {
+		text-shadow: 1px 1px 0px #fff;
+		margin: 86px 0 0 20%;
+		text-align: left;
+	}
+	.tag-under {
+		margin-top: 0.1em;
+		text-align: center;
+	}
+	i {
+	  text-shadow: 1px 1px 0px #fff;
+	  margin: 14px 0 0 25%;
+	  text-align: left;
+	}
+	.superhuge {
+		font-size: 8.85714286em;
+	}
+	.order-link {
+		float: right;
+		margin-right: 15%;
+		transition: all 0.5s;
+		&:hover {
+			color:$bl-lightblue;
+			background: rgba(2, 48, 63, 0.9);
+			box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.5);
+			transition: all 0.5s;
+		}
+	}
+	.domain-order-link {
+		margin-top: 2em;
+	}
+}
+.single {
+	.project-date {
+		text-align: left;
+		margin-left: 1.9em;
+		position: relative;
+		top: -0.75em;
+	}
+	
+	.next-project, .prev-project {
+		font-size: 1em;
+		
+		&:hover {
+			color: $bl-darkblue;
+		}
+	}
+	
+	.page-nav {
+		float: right;
+		width: 5em;
+		position: relative;
+		top: -3em;
+	}
+}
+
+.project {
+	
+	.entry-links {
+		div.button {
+			margin-left: 0.3em;
+		}
+	}
+}
+
+.page-template-page-WHMCS-php {
+	nav.accountdashboard {
+		display: table;
+		width: 100%;
+				
+		a {
+			display: table-cell;
+			width: auto;
+			margin-right: 1em;
+			float: none;
+		}
+	}
+	
+	.clientdetails, .billingdetails {
+		width: 50%;
+		box-sizing: border-box;
+	}
+	.clientdetails {
+		border-right: 1px solid #D9D9D9;
+		border-bottom: none;
+	}
+	.cats {
+		float: left;
+		width: 100%;
+		border-top: 1px solid #D9D9D9;
+	}
+	.cats:last-of-type {
+		margin-bottom: 4em;
+		border-bottom: 1px solid #D9D9D9;
+	}
+	.cat, .cat:first-of-type {
+		float: left;
+		width: 33%;
+		padding-right: 2em;
+		border: none;
+	}
+	.kb-utility {
+		form {
+			float: left;
+			margin: 0.75em 0 0;
+			button {
+				margin: 0;
+			}
+		}
+		a.button {
+			float: right;
+			margin: 0;
+		}
+		span {
+			display: inline-block;
+			padding-left: 1em;
+		}
+	}
+}
+#bridge {
+	nav.accountdashboard {
+		&:hover {
+			border-color: $bl-mid-blue;
+		}
+	}
+}
+#changepw {
+	table {
+		float: right;
+		width: 55%;
+		display: block;
+		td {
+			padding: 0 0.5em;
+			display: inline-block;
+		}
+	}
+}
+.product-utilities, .domain-utilities {
+	float: left;
+	width: 50%;
+}
+.nameservers {
+	width: 49%;
+}
+
+/* @end */
+/*********************/
+/* @group HEADER STYLES
+*********************/
+
+.header {
+	background:/* url('../images/header-1024.jpg') no-repeat center top, */linear-gradient(180deg, rgba(0, 54, 71, 1) 10.91%, rgba(0, 47, 62, 1) 30.6%, rgba(0, 27, 36, 1) 63.42%, rgba(0, 0, 0, 1) 100%);
+	height: 4em;
+	
+	#logo {
+		float: left;
+		position: relative;
+		display: block;
+	}
+	
+	#sidebar-show {
+		font-size: 1.5em;
+		max-height: 5em;
+		cursor: pointer;
+		margin-top: 0.45em;
+		color:#fff;
+		float: right;
+		
+		&:hover {
+			color: $bl-lightblue;
+		}
+	}
+	nav {
+		position: static;
+		background: none;
+		border: none;
+		max-width: 69%;
+		margin: 0 auto;
+		height: 3em;
+		min-height: 3em;
+		display: table;
+		table-layout:fixed;
+		padding: 0.25em 0 0;
+		
+		#nav-hide {
+			&:hover {
+				background-color: $bl-lightblue;
+			}
+		}
+		.nav {
+			border: 1px solid pink;
+			background: none;
+			box-shadow: none;
+			border-radius: none;
+			margin: 0;
+			padding: 0;
+			display: table-row;
+			
+			li {
+				transition:all 0.75s;	
+				&:hover, &:hover a {
+					color: $bl-lightblue;
+					transition:all 0.75s;
+				}
+			}
+			
+			li, li.fa {
+				width: auto;
+				border-color: transparent;
+				text-align: center;
+				padding:0.5em 0.1em;
+				border-top-right-radius: 0.75em;
+				border-bottom-left-radius: 0.75em;
+				font-size: 1em;
+				display: table-cell;
+				float: none;
+				position: static;
+				
+				a {
+					padding: 0.2em 0.4em;
+					display: block;
+				}
+			}
+			
+			.child-wrap {
+				display: block;
+			}
+			
+			li.fa::before {
+				display: block;
+				margin-bottom: 0.2em;
+				z-index: 999999;
+				font-size: 0.75em;
+			}
+			
+			li.menu-item-has-children {
+				
+				&>.child-wrap {
+					position: relative;
+					top: 0;
+				}
+				
+				a {
+					transition: all 0.75s;
+					position: relative;
+					z-index: 999999;
+				}
+				&>.child-wrap:after {
+					content: " ";
+					display: block;
+					transition: width 0.75s;
+					position: relative;
+				}
+				
+				&:hover .child-wrap:after {
+					height: 100%;
+					width: 2em;
+					margin: 0 auto;
+					box-shadow: -3px 3px 5px #000;
+					color: #fff;
+					background: rgba(16, 128, 154, 0.75);
+					border: 1px solid #FFF;
+					position: absolute;
+					top: -1.33em;
+					left: 33%;
+					border-top-right-radius: 1em;
+					border-bottom-left-radius: 1em;
+					transition: all 0.75s;
+					padding-bottom: 1.12em;
+				}
+				
+				&:hover {
+					background:none;
+					border: 1px solid transparent;
+					transition: all 0.75s;
+					
+					& ~ li {
+						pointer-events: none;
+					}
+					&:before {
+						color:#fff;
+					}
+					&>.child-wrap>a {
+						transform: rotate(90deg);
+						-webkit-transform:rotate(90deg);
+						-moz-transform:rotate(90deg);
+						-o-transform:rotate(90deg);
+						top: 2.25em;
+						text-align: left;
+						transition: all 0.75s;
+						color:#fff;	
+					}
+					
+					.sub-menu {
+						display: inline-block;
+						max-width: 600%;
+						border: 1px solid #fff;
+						height: auto;
+						padding-right: 1em;
+						transition: all 0.75s;
+					}
+				}
+				
+				.sub-menu-icon {
+					display: none;
+				}
+				
+				.sub-menu {
+					box-shadow: -3px 3px 5px #000;
+					font-size: 1.2em;
+					border-top-right-radius: 2em;
+					position: relative;
+					left: 3.25em;
+					top: 0.38em;
+					max-width: 0;
+					width: auto;
+					height: 0;
+					background: $bl-blue-opague;
+					transition:all 0.5s ease-in-out 0.4s;
+					overflow: hidden;
+					white-space: nowrap;
+					padding-right: 0;
+					
+					.child-wrap {
+						display: inline;
+					}
+					
+					li.fa::before, li a {
+						display: inline-block;
+					}
+					
+					li {
+						display: block;
+						text-align: left;
+						margin-left: 0.5em;
+						transition: all 0.75s;
+						a {
+							padding-left: 0.5em;
+							transition: all 0.75s;
+						}
+						
+						&:hover {
+							text-shadow: none;
+							color: $bl-darkblue;
+							transition: all 0.75s;
+							
+							a {
+								color: $bl-darkblue;
+								transition: all 0.75s;
+							}
+						}
+					}
+				} /*end .menu-item-has-children */
+			}/* end li */
+		} /*end .nav */
+	} /* end nav */
+}
+
+/* @end */
+/*********************/
+/* @group POSTS & CONTENT STYLES
+*********************/
+#content {
+	padding-top: 5em;
+}
+.post, .page {
+	position: relative;
+	
+	a.excerpt-read-more {
+		top: 0.75em;
+		right: 1.75em;
+		position: absolute;
+		display: inline-block;
+		width: auto;
+	}
+}
+.single-title,
+.page-title, .archive-title {
+	font-size: 1.8em;
+}
+.info-box-left, .info-box-right {
+	width: 50%;
+}
+.info-box-left {
+	float: left;
+}
+.info-box-right {
+	float: right;
+}
+.entry-content {
+	
+	.content-section {
+		min-height: 75vh;
+	}
+	
+	.section-box {
+	
+		&.background {
+			background: url('../images/cloud.jpg') no-repeat center top;
+			background-size: cover;
+		}
+		
+		.button {
+			margin: 0;
+			position: absolute;
+			bottom: 1em;
+			left: 1em;
+		}
+		
+		>ul>li {
+			width: 25%;
+			text-align: right;
+			transition: all 0.5s ease;
+			
+			&:hover, &.active-feature {
+				width: 40%;
+				color: #fff;
+			}
+			
+			&:after {
+				content: "";
+				width: 0;
+				height: 0;
+				border-top: 18px solid transparent;
+				border-left: 9px solid $bl-darkblue;
+				border-bottom: 18px solid transparent;
+				float: right;
+				position: relative;
+				left: 25px;
+				top: -8px;
+			}
+			
+			&:before {
+				content:"\f054";
+			}
+				
+			ul {
+				position: absolute;
+				top: 0em;
+				right: 1em;
+				width: 55%;
+				background: rgba(255, 255, 255, .1);
+				box-shadow: 3px 3px 7px rgba(0,0,0,0.5);
+				padding:0em 1em;
+				border-top-right-radius: 1em;
+				border-bottom-left-radius: 1em;
+				margin: 6.5em 0;
+				
+				li {
+					font-size: 1.2em;
+					margin: 1em 0;
+					text-align: left;
+					color: $bl-darkblue;
+					
+					&:hover {
+						color: $bl-lightblue;
+					}
+				}
+			}
+		}
+	}
+	
+	dl {
+		float: left;
+		width: 49%;
+		box-sizing: border-box;
+	}
+	
+	.back-button {
+	display: block;
+		clear: both;
+	}
+}
+.mobile-center {
+	text-align: inherit;
+}
+.domains-top {
+	ul {
+		width: 50%;
+		margin: 0 auto;
+	}
+}
+
+/* @end */
+/******************************************************************/
+/* @group TABLE STYLES
+******************************************************************/
+table {
+	font-size: 0.9em;
+}
+
+/* @end */
+/*********************/
+/* @group NAVIGATION STYLES
+*********************/
+
+.nav {
+	border: 0;
+	ul {
+		margin-top:0;
+	}
+	li {
+		
+
+		a {
+			border-bottom: 0;
+
+			/*
+			you can use hover styles here even though this size
+			has the possibility of being a mobile device.
+			*/
+			&:hover, &:focus {
+				
+			}
+		}
+
+		&:first-child {}
+		&:last-child {}
+
+		/*
+		plan your menus and drop-downs wisely.
+		*/
+		ul.sub-menu,
+		ul.children {
+
+			li {
+
+				a {
+
+					&:hover,
+					&:focus {}
+
+					&:link {}
+				}
+
+				&:first-child {}
+
+				&:last-child {
+
+					a {
+						border-bottom: 0;
+					}
+				}
+
+				/*
+				if you need to go deeper, go nuts
+				just remember deeper menus suck
+				for usability. k, bai.
+				*/
+				ul {}
+			}
+
+			/* highlight sub-menu current page */
+			li.current-menu-item,
+			li.current_page_item,
+			li.current-page-ancestor {
+				a {}
+			}
+		}
+
+		/* showing sub-menus */
+		&:hover ul {
+			
+		}
+
+	} /* end .menu ul li */
+
+	/* highlight current page */
+	li.current-menu-item,
+	li.current_page_item,
+	li.current-page-ancestor {
+		a {}
+	}  /* end current highlighters */
+
+} /* end .nav */
+
+.breadcrumb {
+	font-size: 0.75em;
+	color: #6E6E6E;
+	opacity: 0.6;
+	text-align: left;
+	transition: all 0.5s;
+	padding-left: 1em;
+	
+	&:hover {
+		opacity: 1;
+		transition: all 0.5s;
+	}
+}
+
+/* @end */
+/******************************************************************/
+/* @group  LOGIN FORM STYLES
+******************************************************************/
+form#login{
+	background: rgba(255, 255, 255, .1);
+	height: auto;
+	overflow-y: visible;
+	overflow: visible;
+	top: 50%;
+	left: 50%;
+	font-size: 1em;
+	width: 50%;
+	margin-left: -25%;
+	margin-top: -12.5%;
+	
+	border-top-right-radius: 3em;
+	border-bottom-left-radius: 3em;
+	box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+	padding: 0.5em;
+	color: #fff;
+	text-shadow: 1px 1px 0px $bl-darkblue;
+	
+	#login-inner {
+		border-top-right-radius: 2.5em;
+		border-bottom-left-radius: 2.5em;
+		background-color: $bl-blue-opague;
+		border: 1px solid $bl-lightblue;
+		padding: 2em 1em 1em 1em;
+		
+		input {
+			border-color: $bl-darkblue;
+		}
+		
+		.h1 {
+			color: #fff;
+			margin-top: 0;
+			font-size: 2.5em;
+		}
+		
+		p.status{
+		    
+		}
+		
+		a {
+			color: #fff;
+		}
+		
+		.close {
+			top: -0.75em;
+			left: -0.5em;
+		}
+	}
+    
+}
+
+.login_overlay{
+    height: 100%;
+    width: 100%;
+    background-color: $bl-darkblue;
+    opacity: 0.4;
+    position: fixed;
+    z-index: 9998;
+   
+}
+
+/* blur effect */
+.blurred {
+	-webkit-filter: blur(20px);
+	-moz-filter: blur(15px);
+    -o-filter: blur(15px);
+    -ms-filter: blur(15px);
+    filter: blur(15px);
+    filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='15');
+	transition : all 1s ease-out;
+}
+.unblur {
+	-webkit-filter: blur(0px);
+	-moz-filter: blur(0px);
+	-o-filter: blur(0px);
+	-ms-filter: blur(0px);
+	filter: blur(0px);
+}
+/* @end */
+/*********************/
+/* @group SIDEBARS & ASIDES
+*********************/
+
+/* search widget */
+#searchform {
+	display: table;
+	width: 100%;
+	
+	input, button {
+		margin-bottom: 0em;
+	}
+	input {
+		display: inline;
+	}
+	button {
+		margin-left: 1em;
+	}
+	div {
+		display: table-cell;
+	}
+}
+.article-header #searchform {
+	margin-bottom: 2em;
+	
+	div:first-of-type, input[type=text] {
+		width:100%;
+	}
+}
+#sidebar1 {
+	#searchform button {
+		border-top-right-radius: 1.5em;
+	}
+	#sidebar-hide:hover {
+		background-color: $bl-lightblue;
+	}
+}
+/*jetpack subscription widget */
+#subscribe-email {
+	float: left;
+	width: 70%;
+}
+#subscribe-submit {
+	float: right;
+	width: 30%;
+}
+.jetpack_subscription_widget input {
+	margin-bottom: 0 !important;
+}
+
+	.widget {
+
+		ul {
+			li {
+			
+				a {
+					&:hover {
+						color: $link-color;
+					}
+				
+				}
+			}
+		}
+	}
+
+
+	/* links widget */
+	.widget_links {}
+	.widget_links ul {}
+	.widget_links ul li {}
+	.widget_links ul li a {}
+
+	/* meta widget */
+	.widget_meta {}
+	.widget_meta ul {}
+	.widget_meta ul li {}
+	.widget_meta ul li a {}
+
+	/* pages widget */
+	.widget_pages {}
+	.widget_pages ul {}
+	.widget_pages ul li {}
+	.widget_pages ul li a {}
+
+	/* recent-posts widget */
+	.widget_recent_entries {}
+	.widget_recent_entries ul {}
+	.widget_recent_entries ul li {}
+	.widget_recent_entries ul li a {}
+
+	/* archives widget */
+	.widget_archive {}
+	.widget_archive ul {}
+	.widget_archive ul li {}
+	.widget_archive ul li a {}
+	.widget_archive select {}
+	.widget_archive option {}
+
+	/* tag-cloud widget */
+	.widget_links {}
+	.widget_links li:after {}
+	.widget_links li:before {}
+	.widget_tag_cloud {}
+	.widget_tag_cloud a {}
+	.widget_tag_cloud a:after {}
+	.widget_tag_cloud a:before {}
+
+	/* calendar widget */
+	.widget_calendar {}
+	#calendar_wrap {}
+	#calendar_wrap th {}
+	#calendar_wrap td {}
+	#wp-calendar tr td {}
+	#wp-calendar caption {}
+	#wp-calendar a {}
+	#wp-calendar #today {}
+	#wp-calendar #prev {}
+	#wp-calendar #next {}
+	#wp-calendar #next a {}
+	#wp-calendar #prev a {}
+
+	/* category widget */
+	.widget_categories {}
+	.widget_categories ul {}
+	.widget_categories ul li {}
+	.widget_categories ul ul.children {}
+	.widget_categories a {}
+	.widget_categories select{}
+	.widget_categories select#cat {}
+	.widget_categories select.postform {}
+	.widget_categories option {}
+	.widget_categories .level-0 {}
+	.widget_categories .level-1 {}
+	.widget_categories .level-2 {}
+	.widget_categories .level-3 {}
+
+	/* recent-comments widget */
+	.recentcomments {}
+	#recentcomments {}
+	#recentcomments li {}
+	#recentcomments li a {}
+	.widget_recent_comments {}
+
+	/* search widget */
+	#searchform {}
+	.widget_search {}
+	.screen-reader-text {}
+
+	/* text widget */
+	.textwidget {}
+	.widget_text {}
+	.textwidget p {}
+/* @end */	
+/******************************************************************/
+/* @group FORM STYLES
+******************************************************************/	
+.kb-search {
+	input[type=search] {
+		width: 78%;
+		display: inline-block;
+		box-sizing: border-box;
+		margin-right: 2%;
+	}
+	button {
+		min-width: 12%;
+		box-sizing: border-box;
+	}
+}
+fieldset {
+	width: 49%;
+}
+fieldset.full {
+	width: 100%;
+}
+/* @end */
+/*********************/
+/* @group FOOTER STYLES
+*********************/
+
+/*
+you'll probably need to do quite a bit
+of overriding here if you styled them for
+mobile. Make sure to double check these!
+*/
+.footer {
+	.social-networks .social-icon {
+		display: block;
+		float: right;
+		width: 2em;
+		height: 2em;
+		color: #fff;
+		padding: 0.4em 0.2em;
+		background: url('../images/leaf.svg') no-repeat center center;
+		background-size: 100%;
+/*		-webkit-filter: drop-shadow(3px 3px 5px rgb(0,0,0));
+		-ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=3, OffY=3,
+		Color='#000')";
+		filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=3, OffY=3, Color='#000')";*/
+		text-shadow: none;
+		text-align: center;
+		
+		&:hover {
+			color: $bl-darkblue;
+		}
+	}
+}
+.footer-links {
+	ul {
+		li {
+			a {
+				&:hover {}
+			}
+			/*
+			be careful with the depth of your menus.
+			it's very rare to have multi-depth menus in
+			the footer.
+			*/
+			ul {}
+		}
+	}
+} /* end .footer-links */
+
+/* @end */
